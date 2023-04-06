@@ -68,7 +68,7 @@ public class UserController {
         log.info("Entering request for delete user");
         userServices.deleteUser(userId);
         ApiResponseMessage message = ApiResponseMessage.builder().message("User Deleted Successfully!!!").success(true).status(HttpStatus.OK).build();
-        log.info("completed request for update user");
+        log.info("completed request for delete user");
         return new ResponseEntity<>(message,HttpStatus.OK);
     }
 
